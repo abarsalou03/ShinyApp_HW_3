@@ -13,7 +13,8 @@ Features
 - Horizontal cutoff line showing the filter value
 
 Files in this project
-- app.R (or ui.R + server.R)
+- ui.R 
+- server.R
 - functions.R
 - data/spotify.csv
 - README.md
