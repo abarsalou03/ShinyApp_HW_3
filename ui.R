@@ -19,9 +19,8 @@ ui <- fluidPage(
                                          "Liveness Score" = "liveness"))),
     column(6, numericInput("search_str",
                             "Filter by this minimum number of streams:",
-                            value = 1000,
-                            min = 0,
-                            step = 50)
+                            value = 0,
+                            min = 0,)
     )
   ),
   
@@ -31,7 +30,8 @@ ui <- fluidPage(
     column(12, plotOutput("plot1", height = "600px"))
   ),
   
+
   br(),
   
-  checkboxInput("color_mode", "Check to color by mode", value = TRUE)
+  checkboxInput("color_mode", "Check to color by mode", value = FALSE)
 )
